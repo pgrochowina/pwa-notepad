@@ -7,6 +7,7 @@ registerSW();
 /* place your code below */
 
 const notepad = document.querySelector(".notepad--js");
+const copy = document.querySelector(".copy--js")
 const load = document.querySelector(".load--js");
 const save = document.querySelector(".save--js");
 const entry = localStorage.getItem("myMemo");
@@ -23,5 +24,11 @@ save.addEventListener("click", () => {
 
 load.addEventListener("click", () => {
   notepad.value = localStorage.getItem("myMemo");
+  //e.preventDefault(); //zapobiega odświeżaniu formularza, u mnie się to nie dzieje - nie wiem, dlaczego
+});
+
+copy.addEventListener("click", () => {
+  notepad.select();
+  document.execCommand('copy');
   //e.preventDefault(); //zapobiega odświeżaniu formularza, u mnie się to nie dzieje - nie wiem, dlaczego
 });
