@@ -1,8 +1,8 @@
 {
   "name": "Zapiski",
   "short_name": "Zapiski",
-  "theme_color": "pink",
-  "background_color": "pink",
+  "theme_color": "#ffa7c4",
+  "background_color": "#ffa7c4",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/pwa-notepad/",
