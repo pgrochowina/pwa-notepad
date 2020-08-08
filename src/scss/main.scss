@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: $bodyColor;
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -48,17 +48,22 @@ body {
     min-height: 400px;
     font-size: 14px;
     line-height: 24px;
-    color: #a1a4b1;
-    border: 1px solid #a1a4b1;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
     padding: 16px;
+    background: var(--primary-color);
+    &::-webkit-resizer {
+      display: none;
+    }
   }
   &__btn-load {
     width: 65px;
     height: 40px;
-    border: 1px solid #121232;
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
-    background-color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -70,10 +75,10 @@ body {
   &__btn-save {
     width: 64px;
     height: 40px;
-    border: 1px solid #121232;
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
