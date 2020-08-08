@@ -13,10 +13,11 @@ html {
 }
 
 body {
-  background: $bodyColor;
+  background: hotpink;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   padding: 16px;
@@ -27,15 +28,18 @@ body {
   max-width: 736px;
 }
 
-.slider {
-  margin-bottom: 12px;
-  font-size: 20px;
-  display: inline-block;
-  position: relative;
+.button {
+  margin: 0px 0px 12px 0px;
+}
+
+.button__toggle {
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
 }
 
 .notepad {
-  margin: 0px, 0px, 12px, 0px;
+  margin: 0px 0px 12px 0px;
   &__commands {
     display: flex;
     justify-content: flex-end;
