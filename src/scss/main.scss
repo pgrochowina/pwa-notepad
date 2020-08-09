@@ -53,11 +53,13 @@ body {
     border-radius: 4px;
     padding: 16px;
     background: var(--primary-color);
+    outline-color: yellow;
     &::-webkit-resizer {
       display: none;
     }
   }
   &__btn-load {
+    outline-color: yellow;
     width: 65px;
     height: 40px;
     border: 1px solid var(--secondary-color);
@@ -73,6 +75,7 @@ body {
     margin-left: 12px;
   }
   &__btn-save {
+    outline-color: yellow;
     width: 64px;
     height: 40px;
     border: 1px solid var(--secondary-color);
