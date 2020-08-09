@@ -54,6 +54,10 @@ body {
     padding: 16px;
     background: var(--primary-color);
     outline-color: yellow;
+    &::selection{
+      color: var(--primary-color);
+      background: var(--secondary-color);
+    }
     &::-webkit-resizer {
       display: none;
     }

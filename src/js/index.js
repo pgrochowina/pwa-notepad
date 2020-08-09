@@ -19,7 +19,7 @@ if (entry) {
 
 save.addEventListener("click", () => {
   localStorage.setItem("myMemo", notepad.value);
-  e.preventDefault(); //zapobiega odświeżaniu formularza
+  //e.preventDefault(); //zapobiega odświeżaniu formularza
 });
 
 load.addEventListener("click", () => {
@@ -45,11 +45,9 @@ viewMode.addEventListener("click", () => {
     document.documentElement.style.setProperty("--primary-color", "#282c35");
     document.documentElement.style.setProperty("--secondary-color", "#ffa7c4");
     isDark = true;
-    console.log(`zmieniono tryb na ciemny, wartość isDark = ${isDark}`);
   } else if (isDark == true) {
     document.documentElement.style.setProperty("--primary-color", "white");
     document.documentElement.style.setProperty("--secondary-color", "#d23669");
     isDark = false;
-    console.log(`zmieniono tryb na jasny, wartość isDark = ${isDark}`);
   }
 });
